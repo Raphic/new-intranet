@@ -1,0 +1,48 @@
+<div class="col-lg-3">
+                            <div class="circle">
+                                <a href="#" class="glyphicon glyphicon-cog"></a>
+                                <p>Document</p>
+                            </div>
+                        </div>
+                        
+                       
+<div class="col-xs- col-sm- col-md- col-lg-"></div>
+<div class="corporate-tab tab-content">
+                    <div id="corporate-principles" class="tab-pane fade in active">
+                        <h3>HOME</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div id="corporate-chart" class="tab-pane fade">
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="corporate-video" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="corporate-system" class="tab-pane fade">
+                        <h3>Menu 3</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                    <div id="corporate-calendar" class="tab-pane fade">
+                        <h3>Menu 3</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
+                
+               
+              <script>
+                                    $(function () {
+                                        $(".event-content").slice(0, 4).show();
+                                        $("#loadMore").on('click', function (e) {
+                                            e.preventDefault();
+                                            $(".event-content:hidden").slice(0, 4).slideDown();
+                                            if ($(".event-content:hidden").length == 0) {
+                                                $("#load").fadeOut('slow');
+                                            }
+                                            $('html,body').animate({
+                                                scrollTop: $(this).offset().top
+                                            }, 1500);
+                                        });
+                                    });
+                                </script>

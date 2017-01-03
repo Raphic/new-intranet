@@ -1,0 +1,81 @@
+<div class="form-inline">
+    <div class="form-group">
+        <label for="join-date">Join date</label>
+        <div class="input-group">
+             <input type="text" class="form-control" id="input-join-date" placeholder="Exp : 14/12/2016">
+             <span class="input-group-addon"><a href="#" class="glyphicon glyphicon-pencil"></a></span>
+        </div>
+    </div>
+</div>
+<div class="form-inline">
+    <div class="form-group">
+        <label for="extension">Extension</label>
+        <div class="input-group">
+             <input type="tel" class="form-control" id="input-extension" placeholder="1994">
+             <span class="input-group-addon"><a href="#" class="glyphicon glyphicon-pencil"></a></span>
+        </div>
+    </div>
+</div>
+<div class="form-inline">
+    <div class="form-group">
+        <label for="mobile">Mobile</label>
+        <div class="input-group">
+             <input type="tel" class="form-control" id="input-mobile" placeholder="096 xxx xxx x"> 
+             <span class="input-group-addon"><a href="#" class="glyphicon glyphicon-pencil"></a></span>
+        </div>
+    </div>
+</div>
+<div class="form-inline">
+    <div class="form-group">
+        <label for="location">Location</label>
+        <div class="input-group">
+             <input type="text" class="form-control" id="input-location" placeholder="HO-ILAV"> 
+             <span class="input-group-addon"><a href="#" class="glyphicon glyphicon-pencil"></a></span>
+        </div>
+    </div>
+</div>
+<div class="form-inline">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <div class="input-group">
+            <input type="email" class="form-control" id="input-email" placeholder="Exp : myemail@mycompany.com">
+            <span class="input-group-addon"><a href="#" class="glyphicon glyphicon-pencil"></a></span>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+	var acc = document.getElementsByClassName("drop-show");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+		acc[i].onclick = function(e){
+			if($('.drop-show.active').html() != $(this).html()) {
+				$('.drop-show.active').next().removeClass('show');
+				$('.drop-show.active').removeClass('active');
+			}
+			this.classList.toggle("active");
+			//this.nextElementSibling.classList.toggle("show");
+			e.stopPropagation();
+	  }
+	}
+	$("html").on("click", function() {
+		$('.drop-show.active').next().removeClass('show');
+		$('.drop-show.active').removeClass('active');
+	})
+});
+</script>
+
+<script>
+    $('ul.side_nav li a').on ('click', function() {
+    //  $('ul.side_nav li a').removeClass('current');
+    //  $(this).addClass('current');
+     var aId = $(this).attr('id');
+    if(aId == 'id_leave_record') {
+       $("#my.daWindow").css("width" , "100%");
+      $(".workspace").hide();
+    } else {
+      $("#my.daWindow").css("width" , "60%");
+      $(".workspace").show();
+    }
+    });
+</script>

@@ -1,0 +1,549 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import "../css/leftmenu.css";
+@import "../css/CustomScrollbar.css";
+@charset "utf-8";
+/* CSS Document */
+*{
+    -webkit-transition: all .27s ease-in-out;
+    transition: all .27s ease-in-out;
+}
+/**********************Flex********************/
+.flex{
+	display: flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+    -webkit-flex-wrap: wrap; 
+	flex-wrap: wrap;
+}
+.flex-inline{
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+}
+.flex-center {
+	-webkit-justify-content: center; 
+	justify-content:center;
+}
+.flex-between {
+	-webkit-justify-content: space-between; 
+	justify-content:space-between;
+}
+.flex-around {
+	-webkit-justify-content: space-around; 
+	justify-content: space-around;
+}
+.flex-end {
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+.flex-vertical {
+	-webkit-align-items: flex-end; 
+	align-items:flex-end;
+}
+.flex-ver-baseline{
+    -webkit-align-items: baseline;
+    align-items: baseline;
+}
+.flex-ver-center{
+    -webkit-align-items: center;
+    align-items: center;
+}
+.inline-block{
+	display: inline-block;
+}
+.clear{
+	clear: both;
+	display: block;
+}
+.pc{
+    display: block;
+}
+.mb{
+    display: none;
+}
+/**********************Text********************/
+#page-content-wrapper {
+    width: 100%;
+    padding: 15px;
+    background: url(../images/background/bg.jpg) fixed no-repeat;
+    background-size: cover;
+    min-height: 1024px;
+    color: #fff;
+}
+#page-content-wrapper a{
+    color: #fff;
+}
+#page-content-wrapper .nav-tabs > li.active > a{
+    background: transparent;
+    border: 1px solid transparent
+}
+#page-content-wrapper .nav-pills > li.active > a,
+#page-content-wrapper .nav > li > a:hover, 
+#page-content-wrapper .nav > li > a:focus,
+#page-content-wrapper .nav > li.active > a{
+    background: rgba(0,0,0,0.2);
+}
+.nopadding{
+    padding: 0!important;
+}
+.nomargin{
+    margin: 0 !important;
+}
+.warp-content{
+}
+.jumpo{
+    margin-top: 10px;
+}
+.circle{
+    height: 155px;
+    text-align: center;
+}
+.circle a{
+    border: 2px solid #fff;
+    color: #fff;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    font-size: 30px;
+    line-height: 72px;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+.circle a:hover{
+    background: rgba(255,255,255,0.12);
+    -webkit-box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    cursor: pointer; 
+    color: #1B3E93;
+}
+.topmenu{
+    position: relative;
+    padding-left:6em;
+}
+.profile{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+.index-left{
+    margin-top: 105px;   
+}
+.news-events.index-left,
+.corporate-tab.index-left{
+    margin-top: 60px;
+}
+.index-right{
+    margin-top: 150px;
+}
+.mCSB_inside > .mCSB_container{
+    transition-delay: initial;
+    -webkit-transition: initial;
+}
+.slidebarlef-bg{
+    position: inherit;
+}
+.empoly-content:not(:first-child):before,
+.system-content .panel .panel-heading:after{
+    content: "";
+    height: 1px;
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    background:  -moz-linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    background:  -webkit-linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    background:  -o-linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    background:  -ms-linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    margin-bottom: 1em;
+}
+.jumpo .nav-tabs > li > a{
+    border-radius: 0;
+}
+.jumpo .nav-tabs > li > a:hover{
+    border: 1px solid transparent;
+}
+.dropdown-menu{
+    background-color: #0555d0;
+}
+/*==================================Workspace==================================*/
+.workspace{
+    margin-top: 110px;
+    padding-top: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/*==================================Corporate==================================*/
+#corporate{
+    background: url(../images/background/bg.jpg) fixed no-repeat;
+    position: relative;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+/*    background-position: 100% 100%;*/
+    z-index: 1;
+    min-height: 600px;
+}
+.corporate-tab{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.tab-pane img{
+    width: 100%;
+}
+/*================Document Control System Tab================*/
+.system-content{
+    background: rgba(0, 0 ,0 ,0.2);
+    min-height: 687px;
+}
+.system-content .panel{
+    background: transparent;
+    border: none;
+}
+.system-content .panel .panel-heading{
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.system-content .panel .panel-heading a{
+    display: block;
+    padding: 10px 15px;
+    color: #999999;
+}
+.system-content .panel .panel-heading:after{
+    margin-bottom: 0;
+}
+.system-nav{
+    border-bottom: none;
+}
+.system-nav > li,
+.my-page-nav > li{
+    margin-right: -2px;
+}
+.system-content .panel-group .panel-body{
+    border: none !Important;
+    padding-left: 1em;
+}
+.system-content .panel .panel-body ul{
+    margin:0 0 0 2em;
+}
+.system-content h4.panel-title a{
+    
+}
+/*==================================EVENT==================================*/
+#news-events-ne,
+#news-events-vacancies,
+.my-page-content{
+    background: rgba(0,0,0,0.2);
+    padding-bottom: 1.5em;
+}
+#loadMore,
+#loadMore-event{
+    margin: 1em 0 0;
+}
+.event-tab-content{
+    overflow-y: overlay;
+}
+.event-img{
+    margin-right: 1em;
+}
+.event-img img{
+    width: 100%;
+}
+.event-content,
+.empoly-content{
+    margin-bottom: .8em;
+    display: none;
+}
+.event-content p{
+    font-size: .8em;
+}
+.event-title a{
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+}
+.event-date{
+    font-size: 0.8em;
+    font-weight: normal;
+}
+/*==================================Employees==================================*/
+#employees>div{
+    background: rgba(0,0,0,0.2);
+    padding-bottom: 1.5em;
+    margin-bottom: 1em;
+}
+.icon-user{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    background: red;
+    margin-right: 1em;
+}
+.icon-sm{
+    padding: 5px;
+    margin-left: 0.2em;
+    border-radius: 100%;
+    background: green;
+}
+.employ-title{
+    font-size: .9em;
+    font-weight: bold;
+}
+.employ-title-sub{
+    font-size: .8em;
+}
+.empoly-content{
+    margin-bottom: 0;
+}
+.empoly-content:first-child{
+    margin-top: 0.5em!important;
+}
+.empoly-content .flex span:nth-child(2){
+    width: 82%;
+}
+.wel-board-icon-nav{
+    width: 100px;
+    text-align: right;
+}
+/*==================================My Page==================================*/
+{
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -13px;
+    border-left: 0;
+    border-bottom: 13px solid transparent;
+    border-top: 13px solid transparent;
+    border-left: 10px solid #5A55A3;
+}
+.my-page-nav{
+    border-bottom: none;
+}
+.my-page-content{
+    padding-top: 1em;
+}
+.my-page-content form label{
+    width: 100px;
+}
+.my-page-content form .input-group-addon{
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.my-page-content form .input-group-addon a{
+    padding: 6px 12px;
+}
+#my-page .form-control{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+#my-page .form-control:hover{
+    background: rgba(0,0,0,0.2);
+    z-index: 1
+}
+.my-page-profile span.glyphicon-user{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: red;
+    font-size: 5em;
+    line-height: 110px;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+.my-page-profile .input-group-addon{
+    width: 0px;
+    border: none;
+    background: transparent;
+}
+#leave-record .table .glyphicon-open{
+    color: #dbdd22;
+}
+#leave-record .table .glyphicon-ok,
+#leave-record .table .glyphicon-saved{
+    color: #19d873;
+}
+#leave-record .table .glyphicon-remove,
+#leave-record .table .glyphicon-repeat{
+    color: #ea3b28;
+}
+.my-page-profile > div{
+        padding-top: 40px;
+    }
+/*==================================Reponsive==================================*/
+@media only screen and (max-width: 480px){
+    .event-content > div{
+        width: 100%;
+    }
+   .event-img{
+    	width:100%;
+    }
+    .event-title{
+        margin-top: .5em !important;
+    }
+    .empoly-content .flex span:nth-child(2) {
+        width: 75%;
+    }
+    .empoly-content .flex span:nth-child(2) div:nth-child(2){
+        width: 100%;
+    }
+    .wel-board-icon-nav{
+        text-align: left;
+        margin: 5px 0;
+    }
+    #corporate,
+    .system-content{
+        min-height: 100px;
+    }
+    #corporate-principles .mb > div > div{
+        width: 100% !important;
+    }
+    .my-page-profile span.glyphicon-user {
+        width: auto;
+        height: 100%;
+        font-size: 3em;
+        padding: 20px;
+        line-height: 1em;
+        text-align: center;
+    }
+    .my-page-profile > div{
+        padding-top: 20px !important;
+    }
+    #leave-record{
+        overflow: auto;
+    }
+}
+@media only screen and (max-width: 768px){
+    .flex{
+        
+    }
+    .slidebarleft-bg{
+        display: block;
+        background: url(../images/background/bg.jpg);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 42px;
+        z-index: 997;
+        border-color: #080808;
+        box-shadow: 0 0 5px rgba(0,0,0,.8);
+    }
+    .workspace{
+        margin-top: 4em;
+    }
+    .my-page-nav.mb{
+        width: 100%;    
+    }
+    .my-page-nav.mb li.dropdown{
+        margin-bottom: 0;
+    }
+    .my-page-content{
+/*
+        padding: 15px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.25);
+*/
+    }
+    .my-page-content form .form-inline button{
+        display: block;
+        text-align: right;
+    }
+    .index-left{
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .hamburger{
+        top: 5px;
+    }
+    .topmenu{
+        padding-left: 10px;
+        margin-top: 3em;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .topmenu ul li{
+        width: 100%;
+    }
+    .profile{
+        top:4px;
+        right: 15px;
+        z-index: 998;
+        position: fixed;
+    }
+    .profile .dropdown-menu{
+        right: 0;
+        left: auto;
+    }
+    .index-left,
+    .news-events.index-left,
+    .corporate-tab.index-left{
+        margin-top: 0;
+    }
+    .corporate-tab{
+        background: rgba(0,0,0,0.2);
+    }
+    #menu-select-tab li.dropdown {
+        margin-bottom: 0px;
+    }
+    .system-content{
+        background: transparent;
+    }
+    .system-content .panel-group{
+        margin-bottom: 0;
+    }
+    .system-content > div > .tab-pane{
+        display: block !important;
+    }
+    .system-content > div > .tab-pane:not(:last-child):after{
+        content: "";
+        height: 1px;
+        display: block;
+        background: #333;
+        background-image: linear-gradient(to right, #888, #fff, #888);
+        background-image: -moz-linear-gradient(to right, #888, #fff, #888);
+        background-image: -webkit-linear-gradient(to right, #888, #fff, #888);
+        background-image: -ms-linear-gradient(to right, #888, #fff, #888);
+        background-image: -o-linear-gradient(to right, #888, #fff, #888);
+        
+    }
+    .values h3{
+        background: linear-gradient(to right, #ed413e , #eb423e, #b84f46);
+        padding: 5px 15px;
+    }
+    .vision h3{
+        background: linear-gradient(to right, #f68e1f , #f38e21, #cf873d);
+        padding: 5px 15px;
+    }
+    .misson h3{
+        background: linear-gradient(to right, #b4d333 , #9ecb3b, #8aaa4c);
+        padding: 5px 15px;
+    }
+    #corporate-principles .mb img{
+        margin-top: 2em;
+    }
+    #corporate-principles .mb > div > div{
+        text-align: justify;
+    }
+    .my-page-profile{
+        margin-top: 1em;
+    }
+}
+@media only screen and (max-width: 767px){
+    .pc{
+        display: none;
+    }
+    .mb{
+        display: block;
+    }
+}
