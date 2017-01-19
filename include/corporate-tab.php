@@ -35,6 +35,7 @@
                         <p>We operate our business ethically, trans-parently and efficiently.</p>
                         <p>We struve continually ti grow,learn and improve.</p>
                     </div>
+<!--
                     <div class="col-xs-4 principle-svg-box">
                         <svg class="principle-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 352.33 306.94" enable-background="new 0 0 352.33 306.94" xml:space="preserve">
                             <g class="values">
@@ -51,6 +52,39 @@
                             </g>
                         </svg>
                     </div>
+-->
+                    <!--++++++++Can hép++++++++-->
+                    <div id="svg-box-animation" class="drawings col-xs-4">
+                        <svg class="illustration" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="352.33px" height="306.94px" viewBox="0 0 352.33 306.94" enable-background="new 0 0 352.33 306.94" xml:space="preserve">
+                            <g class="values">
+                                <path d="M87.584,1.25L0.334 155.25 87.647 306.938 170.989 114.399 z"></path>
+                                <text transform="matrix(0.4389 -0.8986 0.8986 0.4389 78.3188 181.7197)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="27.732">VALUES</text>
+                            </g>
+                            <g class="vision">
+                                <path d="M87.584,1.25L264.709 0 352.666 153.23 213.584 172.125 z"></path>
+                                <text transform="matrix(0.5888 0.8083 -0.8083 0.5888 185.5059 54.1172)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="27.8707">VISION</text>
+                            </g>
+                            <g class="misson">
+                                <path d="M352.666,153.23L141.86 181.338 87.647 306.938 265.377 305.918 z"></path>
+                                <text transform="matrix(0.9856 -0.1692 0.1692 0.9856 152.8398 255.6035)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="30.5863">MISSON</text>
+                            </g>
+                        </svg>
+                        <svg class="line-drawing" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="306.94px" viewBox="0 0 352.33 306.94" enable-background="new 0 0 352.33 306.94" xml:space="preserve">
+                            <g fill="none" stroke="#000000" stroke-width="2">
+                                <path d="M87.584,1.328L264.709 0 352.666 153.23 213.349 171.806 "></path>
+                                <path d="M352.666,153.23L265.377 305.918 87.647 306.938 142.023 181.316 "></path>
+                                <path d="M170.99,114.36L142.023 181.316 213.349 171.806 170.99 114.36 87.584 1.25 0.334 155.25 87.647 306.938 "></path>
+                            </g>
+                        </svg>
+                        <svg class="line-drawing" opacity="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="306.94px" viewBox="0 0 352.33 306.94" enable-background="new 0 0 352.33 306.94" xml:space="preserve">
+                            <g fill="none" stroke="#000000" stroke-width="2">
+                                <path d="M87.584,1.328L264.709 0 352.666 153.23 213.349 171.806 "></path>
+                                <path d="M352.666,153.23L265.377 305.918 87.647 306.938 142.023 181.316 "></path>
+                                <path d="M170.99,114.36L142.023 181.316 213.349 171.806 170.99 114.36 87.584 1.25 0.334 155.25 87.647 306.938 "></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <!--++++++++/Can hép++++++++-->
                     <div class="col-xs-4">
                         <div class="row">
                             <div class="col-xs-12">

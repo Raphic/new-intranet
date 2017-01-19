@@ -1,0 +1,36 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body {
+	background: #F17370;
+}
+svg {
+	pointer-events: none;
+}
+.drawings {
+	position: relative;
+}
+.illustration {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-height: 100%;
+	max-width: 100%;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+.show {
+	opacity: 1;
+}
+.hide {
+	opacity: 0;
+}
+.line-drawing,
+.illustration {
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.line-drawing path {
+	fill: none;
+	stroke: white;
+	stroke-width: 3;
+}
