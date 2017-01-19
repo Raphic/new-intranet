@@ -62,7 +62,7 @@
     </div>
     
     <div class="col-xs-12 col-sm-12 text-center">
-        <button type="button" id="loadMore" class="btn btn-lg btn-info">View More</button>
+        <button type="button" id="loadMore" class="btn btn-mirror">View More</button>
     </div>
 </div>
 <!-- =======================End Vacancies's Tabs New and Event Tab ======================= -->

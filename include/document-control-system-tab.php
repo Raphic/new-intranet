@@ -1,5 +1,5 @@
 <div class="row system-tab">
-    <ul class="system-nav nopadding pc nav nav-tabs nav-stacked col-xs-12 col-sm-5 col-md-3">
+    <ul class="system-nav nopadding pc nav nav-tabs nav-stacked col-xs-12 col-sm-5 col-md-4 col-lg-3">
         <li class="active"><a href="#tab1" data-toggle="tab">Academic Management</a></li>
         <li><a href="#tab2" data-toggle="tab">Accounts</a></li>
         <li><a href="#tab3" data-toggle="tab">Administration</a></li>
@@ -17,7 +17,7 @@
         <li><a href="#tab15" data-toggle="tab">Teacher Training Centre</a></li>
         <li><a href="#tab16" data-toggle="tab">The Overseas Study Centre</a></li>
     </ul>
-    <div class="col-xs-12 col-sm-7 col-md-9 nopadding system-content">
+    <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 nopadding system-content">
             <div class="tab-content col-xs-12 col-sm-12 col-md-12">
                 <!-- ======================= Tab1  ======================= -->
                 <div class="tab-pane in active" id="tab1">

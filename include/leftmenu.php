@@ -3,7 +3,7 @@
         <!-- Sidebar -->
         <div id="sidebarleft-wrapper">
             <ul class="sidebarleft-nav panel">
-                <li class="sidebarleft-brand"><a href="#">ILA Intranet</a></li>
+                <li class="sidebarleft-brand"><a href="index.php">ILA Intranet</a></li>
                 <li> 
                     <a data-toggle="collapse" data-parent="#sidebarleft-wrapper" href="#sidebar-sub01">Centres <span class="caret"></span></a>
                 </li>
@@ -75,7 +75,7 @@
                     <a data-toggle="collapse" data-parent="#sidebarleft-wrapper" href="#sidebar-sub02">Departments<span class="caret"></span></a>
                 </li>
                 <ul id="sidebar-sub02" class="panel-collapse collapse list-unstyled in">
-                    <li><a href="#">ILAV Head Office</a></li>
+                    <li><a href="department.php">ILAV Head Office</a></li>
                     <li><a href="#">Internal Audit</a></li>
                     <li><a href="#">Hanoi Head Office</a></li>
                     <li><a href="#">Board of Directors</a></li>
@@ -95,8 +95,8 @@
                     <li><a href="#">Customer Experience</a></li>
                     <li><a href="#">Purchasing Dept</a></li>
                 </ul>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Document Control System</a></li>
+                <li><a href="directory.php">Directory</a></li>
+                <li><a href="document.php">Document Control System</a></li>
             </ul>
         </div>
         <div class="slidebarleft-bg"></div>

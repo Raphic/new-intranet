@@ -14,7 +14,7 @@
                     <!-- ======================= Corporate Tabs lv2 ======================= -->
                     <div class="row">
                        <div class="container">
-                            <ul class="nav nav-pills">
+                            <ul id="menu-select-tab" class="nav nav-pills">
                                 <li class="active"> <a href="#news-events-ne" data-toggle="tab">News & Events</a> </li>
                                 <li><a href="#news-events-vacancies" data-toggle="tab">Vacancies</a> </li>
                             </ul>
