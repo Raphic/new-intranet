@@ -82,7 +82,7 @@
         </li>
         <li class="circle col-xs-4 col-sm-4 col-md-3">
            <div class="circle-box">
-                <a title="Supporting line" href="#" target="_blank" class="fa fa-phone"></a>
+                <a title="Supporting line" href="#support-line" data-toggle="modal" class="fa fa-phone"></a>
                 <p>Supporting line</p>
             </div>
         </li>
@@ -111,4 +111,74 @@
             </div>
         </li>
     </ul>
+    <!--======================= Support Line======================= -->
+    <div class="modal fade" id="support-line" tabindex="-1" role="dialog" aria-labelledby="SupportLineLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="support-line">Support Line</h4> </div>
+                <div class="modal-body">
+                    <table class="table table-hover rps-table">
+                        <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>Hot line</th>
+                            <th>Extension</th>
+                            <th>Email</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td data-th="Team">MIS</td>
+                            <td data-th="Hot line">0932639119</td>
+                            <td data-th="Extension">1940</td>
+                            <td data-th="Email"><a href="mailto:itsupport@ilavietnam.edu.vn">itsupport@ilavietnam.edu.vn</a></td>
+                        </tr>
+                        <tr>
+                            <td data-th="Team">Security</td>
+                            <td data-th="Hot line">-</td>
+                            <td data-th="Extension">1147</td>
+                            <td data-th="Email">-</td>
+                        </tr>
+                        <tr>
+                            <td data-th="Team">Maintenance</td>
+                            <td data-th="Hot line">-</td>
+                            <td data-th="Extension">1975</td>
+                            <td data-th="Email"><a href="mailto:adminsupport@ilavietnam.edu.vn">adminsupport@ilavietnam.edu.vn</a></td>
+                        </tr>
+                        <tr>
+                            <td data-th="Team">Maintenance</td>
+                            <td data-th="Hot line">-</td>
+                            <td data-th="Extension">1975</td>
+                            <td data-th="Email"><a href="mailto:adminsupport@ilavietnam.edu.vn">adminsupport@ilavietnam.edu.vn</a></td>
+                        </tr>
+                        <tr>
+                            <td data-th="Team">Cleaner</td>
+                            <td data-th="Hot line">-</td>
+                            <td data-th="Extension">1138</td>
+                            <td data-th="Email">-</td>
+                        </tr>
+                        <tr>
+                            <td data-th="Team">Whistle blower</td>
+                            <td data-th="Hot line">(+84)8.35218827</td>
+                            <td data-th="Extension">-</td>
+                            <td data-th="Email"><a href="mailto:WhistleBlower@ilavietnam.edu.vn">WhistleBlower@ilavietnam.edu.vn</a></td>
+                        </tr>
+                        <tr>
+                            <td data-th="Team">Teacher hotline</td>
+                            <td data-th="Hot line">0122 3088 248</td>
+                            <td data-th="Extension">-</td>
+                            <td data-th="Email">-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Payslip Tab panes -->
 </div>

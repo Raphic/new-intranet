@@ -28,16 +28,21 @@
     <div id="corporate-principles" class="tab-pane fade in active">
         <div class="row">
             <div class="container-fluid pc">
-                <div class="row">
-                    <div class="col-xs-4">
+                <div class="row principle">
+                    <div class="col-xs-4 values-text">
                         <p>We place our customer expirence at the core of all we do.</p>
                         <p>We are committed to build a professional and open working environment, where people have epual chance to grow.</p>
                         <p>We operate our business ethically, trans-parently and efficiently.</p>
                         <p>We struve continually ti grow,learn and improve.</p>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75px" height="50px" viewBox="0 0 75 50" enable-background="new 0 0 75 50" xml:space="preserve">
+                            <path fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" d="M75,50L32.048 3.169 0 0 "></path>
+                        </svg>
                     </div>
-<!--
-                    <div class="col-xs-4 principle-svg-box">
-                        <svg class="principle-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 352.33 306.94" enable-background="new 0 0 352.33 306.94" xml:space="preserve">
+
+                    <!--=================Can hép=================-->
+                    <div id="svg-box-animation" class="drawings col-xs-4 nopadding" style="height:306.94px">
+                        <!--=================img Show=================-->
+                        <svg class="illustration principle-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 352.33 306.94" enable-background="new 0 0 352.33 306.94" xml:space="preserve">
                             <g class="values">
                                 <path d="M87.584,1.25L0.334 155.25 87.647 306.938 170.989 114.399 z"></path>
                                 <text transform="matrix(0.4389 -0.8986 0.8986 0.4389 78.3188 181.7197)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="27.732">VALUES</text>
@@ -51,47 +56,29 @@
                                 <text transform="matrix(0.9856 -0.1692 0.1692 0.9856 152.8398 255.6035)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="30.5863">MISSON</text>
                             </g>
                         </svg>
-                    </div>
--->
-                    <!--++++++++Can hép++++++++-->
-                    <div id="svg-box-animation" class="drawings col-xs-4">
-                        <svg class="illustration" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="352.33px" height="306.94px" viewBox="0 0 352.33 306.94" enable-background="new 0 0 352.33 306.94" xml:space="preserve">
-                            <g class="values">
-                                <path d="M87.584,1.25L0.334 155.25 87.647 306.938 170.989 114.399 z"></path>
-                                <text transform="matrix(0.4389 -0.8986 0.8986 0.4389 78.3188 181.7197)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="27.732">VALUES</text>
-                            </g>
-                            <g class="vision">
-                                <path d="M87.584,1.25L264.709 0 352.666 153.23 213.584 172.125 z"></path>
-                                <text transform="matrix(0.5888 0.8083 -0.8083 0.5888 185.5059 54.1172)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="27.8707">VISION</text>
-                            </g>
-                            <g class="misson">
-                                <path d="M352.666,153.23L141.86 181.338 87.647 306.938 265.377 305.918 z"></path>
-                                <text transform="matrix(0.9856 -0.1692 0.1692 0.9856 152.8398 255.6035)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="30.5863">MISSON</text>
-                            </g>
-                        </svg>
-                        <svg class="line-drawing" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="306.94px" viewBox="0 0 352.33 306.94" enable-background="new 0 0 352.33 306.94" xml:space="preserve">
-                            <g fill="none" stroke="#000000" stroke-width="2">
-                                <path d="M87.584,1.328L264.709 0 352.666 153.23 213.349 171.806 "></path>
-                                <path d="M352.666,153.23L265.377 305.918 87.647 306.938 142.023 181.316 "></path>
-                                <path d="M170.99,114.36L142.023 181.316 213.349 171.806 170.99 114.36 87.584 1.25 0.334 155.25 87.647 306.938 "></path>
-                            </g>
-                        </svg>
-                        <svg class="line-drawing" opacity="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="306.94px" viewBox="0 0 352.33 306.94" enable-background="new 0 0 352.33 306.94" xml:space="preserve">
-                            <g fill="none" stroke="#000000" stroke-width="2">
+                        <!--=================Effect Show=================-->
+                        <svg class="line-drawing" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 352.33 306.94" enable-background="new 0 0 352.33 306.94" xml:space="preserve">
+                            <g fill="none" stroke="#000000" stroke-width="1">
                                 <path d="M87.584,1.328L264.709 0 352.666 153.23 213.349 171.806 "></path>
                                 <path d="M352.666,153.23L265.377 305.918 87.647 306.938 142.023 181.316 "></path>
                                 <path d="M170.99,114.36L142.023 181.316 213.349 171.806 170.99 114.36 87.584 1.25 0.334 155.25 87.647 306.938 "></path>
                             </g>
                         </svg>
                     </div>
-                    <!--++++++++/Can hép++++++++-->
+                    <!--=================/Can hép=================-->
                     <div class="col-xs-4">
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-xs-12 vision-text">
                                 <p>To become best-in-class in the education and trainning industry. We do this through our commitment to deliver life-changing learning experiences that empower our students for life.</p>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="105px" height="50px" viewBox="0 0 105 50" enable-background="new 0 0 105 50" xml:space="preserve">
+                                    <path fill="none" stroke="#fff" stroke-width="2" d="M0,50L60.131 5.042 105 0 "></path>
+                                </svg>
                             </div>
-                            <div class="col-xs-12">
+                            <div class="col-xs-12 mission-text">
                                 <p>We are committed to continuously improve our operations, to build more schools and to provide 21st century learning standards for our students.</p>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="2px" viewBox="0 0 100 2" enable-background="new 0 0 100 2" xml:space="preserve">
+                                <line fill="#FFFFFF" stroke="#fff" stroke-width="2" stroke-miterlimit="10" x1="0" y1="1" x2="100" y2="1"/>
+                                </svg>
                             </div>
                         </div>
                     </div>

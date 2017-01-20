@@ -1,10 +1,87 @@
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body {
-	background: #F17370;
-}
+/**, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }*/
+/*
 svg {
 	pointer-events: none;
 }
+*/
+/*****************Hover Coporate Principle********************/
+.principle{
+    position: relative;
+}
+.principle p{
+    font-size: 0.9em;
+}
+.values-text{
+    display: block;
+    margin-top: 3.5%;
+}
+.values-text p{
+    text-align: right;
+}
+.values-text svg,
+.vision-text svg,
+.mission-text svg{
+    position: absolute;
+    right: -75px;
+    top: 10px;
+    z-index: 1;
+}
+.vision-text{
+    display: block;
+    position: relative;
+}
+.vision-text svg{
+    left: -105px;
+}
+.mission-text{
+    margin-top: 180px;
+}
+.mission-text svg{
+    top: 40%;
+    left: -100px;
+}
+
+.principle-svg,
+.principle-svg g,
+.principle-svg g:hover,
+.principle-svg path,
+.principle-svg path:hover,
+.principle-svg text,
+.principle-svg text:hover{
+    -webkit-transition: all .27s ease-in-out;
+     transition: all .27s ease-in-out;
+    cursor: pointer;
+}
+.principle-svg g:hover text{
+    stroke: #fff;
+    stroke-width: 2px;
+}
+.values path{
+    fill: rgba(236,66,62,1);
+}
+.vision path{
+    fill:#F78F21;
+}
+.misson path{
+    fill:#AAD03A;
+}
+
+.values:hover path{
+    fill: rgba(236,66,62,0.8);
+    stroke: rgba(236,66,62,1);
+    stroke-width: 2px;
+}
+.vision:hover path{
+    fill: rgba(246,142,32,0.8);
+    stroke: rgba(246,142,32,1);
+    stroke-width: 2px;
+}
+.misson:hover path{
+    fill: rgba(170,207,57,0.8);
+    stroke: rgba(170,207,57,1);
+    stroke-width: 2px;
+}
+/***************** Classical ********************/
 .drawings {
 	position: relative;
 }
@@ -28,9 +105,44 @@ svg {
 .illustration {
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
+
 }
 .line-drawing path {
 	fill: none;
 	stroke: white;
-	stroke-width: 3;
+	stroke-width: 1;
+}
+@media only screen and (max-width: 1200px){
+    .values-text{
+        margin-top: 7%;
+    }
+    .values-text svg,
+    .vision-text svg{
+        height: 40px;
+    }
+    .mission-text{
+        margin-top: 160px;
+    }
+    .mission-text svg{
+        width: 80px;
+    }
+}
+@media only screen and (max-width: 992px){
+    .values-text{
+        margin-top: 5%;
+    }
+    .vision-text{
+        margin-top: 35px;
+    }
+    .vision-text svg{
+        width: 70px;
+        margin-left: 30px;
+    }
+    .mission-text {
+        margin-top: 40px;
+    }
+    .mission-text svg{
+        width: 60px;
+        left: -60px;
+    }
 }

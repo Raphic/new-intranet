@@ -46,7 +46,7 @@
 		this.el = el;
 		this.image = this.el.previousElementSibling;
 		this.current_frame = 0;
-		this.total_frames = 100;
+		this.total_frames = 160;
 		this.path = new Array();
 		this.length = new Array();
 		this.handle = 0;
@@ -136,56 +136,74 @@
 		return (elTop + elH * h) <= viewed && (elBottom) >= scrolled;
 	}
 	
-	function init() {
-		var svgs = Array.prototype.slice.call( document.querySelectorAll( '#svg-box-animation svg' ) ),
-			svgArr = new Array(),
-			didScroll = false,
-			resizeTimeout;
+	function init() {	
+		$("ul.nav-pills li a").on('click', function() {
+			var idActive = $(this).attr('href');
+			var findTabDivActive = $(idActive);
+			var subMenu = findTabDivActive.find('ul.nav-pills li.active');
+			if(subMenu.length > 0) {
+				var idSubMenuActive = subMenu.find('a').attr('href');
+				var svgs = Array.prototype.slice.call( document.querySelectorAll( idSubMenuActive+' svg' ) );
+			} else {
+				var svgs = Array.prototype.slice.call( document.querySelectorAll( idActive+' svg' ) );
+			}		
+			if(svgs.length > 0) {
+				var svgArr = new Array(),
+				didScroll = false,
+				resizeTimeout;
 
-		// the svgs already shown...
-		svgs.forEach( function( el, i ) {
-			var svg = new SVGEl( el );
-			svgArr[i] = svg;
-			setTimeout(function( el ) {
-				return function() {
-					if( inViewport( el.parentNode ) ) {
-						svg.render();
-					}
-				};
-			}( el ), 250 ); 
-		} );
-
-		var scrollHandler = function() {
-				if( !didScroll ) {
-					didScroll = true;
-					setTimeout( function() { scrollPage(); }, 60 );
-				}
-			},
-			scrollPage = function() {
+			// the svgs already shown...
 				svgs.forEach( function( el, i ) {
-					if( inViewport( el.parentNode, 0.5 ) ) {
-						svgArr[i].render();
-					}
-				});
-				didScroll = false;
-			},
-			resizeHandler = function() {
-				function delayed() {
-					scrollPage();
-					resizeTimeout = null;
-				}
-				if ( resizeTimeout ) {
-					clearTimeout( resizeTimeout );
-				}
-				resizeTimeout = setTimeout( delayed, 200 );
-			};
+					var svg = new SVGEl( el );
+					svgArr[i] = svg;
+					setTimeout(function( el ) {
+						return function() {
+							if( inViewport( el.parentNode ) ) {
+								svg.render();
+							}
+						};
+					}( el ), 250 ); 
+				} );
 
-		window.addEventListener( 'scroll', scrollHandler, false );
-		window.addEventListener( 'resize', resizeHandler, false );
+				var scrollHandler = function() {
+						if( !didScroll ) {
+							didScroll = true;
+							setTimeout( function() { scrollPage(); }, 60 );
+						}
+					},
+					scrollPage = function() {
+						svgs.forEach( function( el, i ) {
+							if( inViewport( el.parentNode, 0.5 ) ) {
+								svgArr[i].render();
+							}
+						});
+						didScroll = false;
+					},
+					resizeHandler = function() {
+						function delayed() {
+							scrollPage();
+							resizeTimeout = null;
+						}
+						if ( resizeTimeout ) {
+							clearTimeout( resizeTimeout );
+						}
+						resizeTimeout = setTimeout( delayed, 200 );
+					},
+					clickHandler = function() {
+						$("a[href=#corporate]").on('click', function(){
+							$('svg').remove(['hide','show']);
+							svgs.forEach( function( el, i ) {
+								if( inViewport( el.parentNode, 0.5 ) ) {
+									svgArr[i].render();
+								}
+							});
+						})				
+					};
+				window.addEventListener( 'scroll', scrollHandler, false );
+				window.addEventListener( 'resize', resizeHandler, false );
+				window.addEventListener( 'click', clickHandler, false );
+			}
+		});
 	}
-
-    	//init();
-	$("a[href=#corporate]").on('click', function(){
-		init();
-	})
+	init();
 })();

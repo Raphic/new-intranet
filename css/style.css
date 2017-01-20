@@ -125,7 +125,10 @@ body{
 .topmenu{
 /*    position: relative;*/
     position: fixed;
-    padding-left:5em;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0 12px 5em;
     z-index: 3;
     background: url(../images/background/bg.jpg) fixed no-repeat;
     background-size: cover;
@@ -133,7 +136,7 @@ body{
 }
 .profile{
     position: absolute;
-    top: 0px;
+    top: 8px;
     right: 30px;
 }
 .index-left{
@@ -785,6 +788,54 @@ ul.result a{
 }
 .no-control a{
     font-size: 0;
+}
+/*==================================Reponsive Table==================================*/
+.rps-table th {
+    display: none;
+}
+.rps-table td {
+    display: block;
+}
+.rps-table td:before{
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 7.5em;
+    display: inline-block;
+    color: #044476;
+}
+.rps-table td:first-child {
+    padding-top: .5em;
+}
+.rps-table td:last-child {
+    padding-bottom: .5em;
+}
+@media (max-width: 768px){
+    table.rps-table{
+/*        background: rgba(255, 203, 4 ,0.1);*/
+        margin: -15px 0;
+    }
+    .rps-table tr td:first-child{
+        width: 100%;
+    }
+    .rps-table tr td{
+        padding: 10px;
+    }
+    .rps-table tr{
+        margin-top: 10px;
+    }
+    .rps-table tr:nth-child(even){
+        background: #d9edf7;
+    }
+}
+@media (min-width: 768px) {
+    .rps-table td:before {
+        display: none;
+    }
+    .rps-table th,
+    .rps-table td {
+        display: table-cell;
+        padding: .25em .5em;
+    }
 }
 /*==================================Footer==================================*/
 footer  a{

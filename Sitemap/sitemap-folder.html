@@ -1,0 +1,916 @@
+<html>
+<head>
+    <title>Sitemap Folder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="jquery.orgchart.css" media="all" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        div.orgChart {
+            margin: 10px;
+            padding: 20px;
+        }
+        div.orgChart h2 {
+            margin: 0px;
+            font-size: 16px;
+            font-weight: normal;
+            min-height: 20px;
+        }
+        div.orgChart h2:hover {
+            background: #fcfaca;
+            cursor: text;
+        }
+        div.orgChart ul {
+            list-style: none;
+            margin: 4px;
+            padding: 0px;
+            font-size: 0.8em;
+            text-align: left;
+        }
+        div.orgChart ul.stack,
+        div.orgChart ul.stack ul {
+            text-align: center;
+        }
+        div.orgChart table {
+            width: 100%;
+        }
+        div.orgChart tr.lines td.line {
+            width: 1px;
+            height: 20px;
+        }
+        div.orgChart tr.lines td.top {
+            border-top: 1px dashed black;
+        }
+        div.orgChart tr.lines td.left {
+            border-right: 1px dashed black;
+        }
+        div.orgChart tr.lines td.right {
+            border-left: 0px dashed black;
+        }
+        div.orgChart tr.lines td.half {
+            width: 50%;
+        }
+        div.orgChart td {
+            text-align: center;
+            vertical-align: top;
+            padding: 0px 2px;
+        }
+        div.orgChart div.node {
+            cursor: default;
+            border: 1px solid #e7e7e7;
+            display: inline-block;
+            padding: 5px;
+            width: 96px;
+            height: 60px;
+            background: #ffffff;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #ffffff 0%, #fbfbfb 100%);
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fbfbfb));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #ffffff 0%, #fbfbfb 100%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #ffffff 0%, #fbfbfb 100%);
+            /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #ffffff 0%, #fbfbfb 100%);
+            /* IE10+ */
+            background: linear-gradient(to bottom, #ffffff 0%, #fbfbfb 100%);
+            /* W3C */
+            line-height: 1.3em;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            position: relative;
+            box-shadow: 1px 1px 0px #ddd;
+        }
+        .org-add-button,
+        .org-del-button,
+        .org-confirm-del-button {
+            position: absolute;
+            font-size: 12px;
+        }
+        .org-add-button {
+            bottom: 3px;
+            left: 5px;
+            padding-left: 13px;
+            background: url(./add.png) no-repeat 0 3px;
+        }
+        .org-add-button:hover,
+        .org-del-button:hover {
+            background-color: #eef;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .org-del-button {
+            background: url(./delete.png) no-repeat;
+            width: 12px;
+            height: 12px;
+            bottom: 7px;
+            right: 5px;
+        }
+        .org-input {
+            width: 90px;
+        }
+        .org-confirm-del-button {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin-top:0px;">Intranet folder sitemap</h1>
+    <div id="orgChartContainer">
+        <div id="orgChart" class="orgChart">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <tr>
+                        <td colspan="24">
+                            <div class="node" node-id="1">
+                                <h2>New Intranet</h2>
+                                <div class="org-add-button">Add Child</div>
+                                <div class="org-del-button"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="lines">
+                        <td colspan="24">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr class="lines x">
+                                        <td class="line left half"></td>
+                                        <td class="line right half"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="lines v">
+                        <td class="line left"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right top"></td>
+                        <td class="line left top"></td>
+                        <td class="line right"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="16">
+                                            <div class="node" node-id="2">
+                                                <h2>css</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="lines">
+                                        <td colspan="16">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr class="lines x">
+                                                        <td class="line left half"></td>
+                                                        <td class="line right half"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr class="lines v">
+                                        <td class="line left"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <div class="node" node-id="8">
+                                                                <h2>bootstrap</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="lines">
+                                                        <td colspan="4">
+                                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                                <tbody>
+                                                                    <tr class="lines x">
+                                                                        <td class="line left half"></td>
+                                                                        <td class="line right half"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="lines v">
+                                                        <td class="line left"></td>
+                                                        <td class="line right top"></td>
+                                                        <td class="line left top"></td>
+                                                        <td class="line right"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="2">
+                                                                            <div class="node" node-id="16">
+                                                                                <h2>bootstrap.css</h2>
+                                                                                <div class="org-add-button">Add Child</div>
+                                                                                <div class="org-del-button"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td colspan="2">
+                                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="2">
+                                                                            <div class="node" node-id="17">
+                                                                                <h2>bootstrap-theme.css</h2>
+                                                                                <div class="org-add-button">Add Child</div>
+                                                                                <div class="org-del-button"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="9">
+                                                                <h2>CustomScrollbar.css</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="10">
+                                                                <h2>datatables.min.css</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="11">
+                                                                <h2>hover.css</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="12">
+                                                                <h2>leftmenu.css</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="13">
+                                                                <h2>style.css</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="14">
+                                                                <h2>svg-amination.css</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="15">
+                                                                <h2>topmenu.css</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="10">
+                                            <div class="node" node-id="3">
+                                                <h2>js</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="lines">
+                                        <td colspan="10">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr class="lines x">
+                                                        <td class="line left half"></td>
+                                                        <td class="line right half"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr class="lines v">
+                                        <td class="line left"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <div class="node" node-id="18">
+                                                                <h2>boostrap</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="lines">
+                                                        <td colspan="4">
+                                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                                <tbody>
+                                                                    <tr class="lines x">
+                                                                        <td class="line left half"></td>
+                                                                        <td class="line right half"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="lines v">
+                                                        <td class="line left"></td>
+                                                        <td class="line right top"></td>
+                                                        <td class="line left top"></td>
+                                                        <td class="line right"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="2">
+                                                                            <div class="node" node-id="24">
+                                                                                <h2>bootstrap.js</h2>
+                                                                                <div class="org-add-button">Add Child</div>
+                                                                                <div class="org-del-button"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td colspan="2">
+                                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="2">
+                                                                            <div class="node" node-id="25">
+                                                                                <h2>jquery-2.1.1.js</h2>
+                                                                                <div class="org-add-button">Add Child</div>
+                                                                                <div class="org-del-button"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="19">
+                                                                <h2>datatables.min.js</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="20">
+                                                                <h2>jquery.mCustomScrollbar.js</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="21">
+                                                                <h2>svganimations.js</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="23">
+                                                                <h2>classie.js</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="node" node-id="4">
+                                                <h2>fonts</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="node" node-id="5">
+                                                <h2>images</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="22">
+                                            <div class="node" node-id="6">
+                                                <h2>include</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="lines">
+                                        <td colspan="22">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr class="lines x">
+                                                        <td class="line left half"></td>
+                                                        <td class="line right half"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr class="lines v">
+                                        <td class="line left"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right top"></td>
+                                        <td class="line left top"></td>
+                                        <td class="line right"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="22">
+                                                                <h2>bootstrap.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="26">
+                                                                <h2>corporate-tab.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="27">
+                                                                <h2>document-control-system-tab.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="28">
+                                                                <h2>employees-tab.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="29">
+                                                                <h2>footer.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="30">
+                                                                <h2>index-tab.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="31">
+                                                                <h2>leftmenu.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="32">
+                                                                <h2>my-page-tab.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="33">
+                                                                <h2>newevent-tab.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="34">
+                                                                <h2>vacancies-tab.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="node" node-id="35">
+                                                                <h2>workspace.php</h2>
+                                                                <div class="org-add-button">Add Child</div>
+                                                                <div class="org-del-button"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="node" node-id="7">
+                                                <h2>videos</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="node" node-id="36">
+                                                <h2>index.php</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="node" node-id="37">
+                                                <h2>chart.php</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="node" node-id="38">
+                                                <h2>department.php</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="node" node-id="39">
+                                                <h2>directory.php</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="node" node-id="40">
+                                                <h2>document.php</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="node" node-id="41">
+                                                <h2>position.php</h2>
+                                                <div class="org-add-button">Add Child</div>
+                                                <div class="org-del-button"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
