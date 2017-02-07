@@ -21,10 +21,11 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <!-- Page Content Main-->
-            <!--       <div class="container-fluid">-->
+            <!-- <div class="container-fluid">-->
             <div class="warp-content container">
                 <!-- Top menu -->
                 <div class="topmenu container">
+                    <a class="logo-back pc" href="index.php"><img src="images/whitelogo.png"></a>
                     <ul class="nav nav-pills row">
                         <div class="profile">
                             <div class="btn-group navbar-right">

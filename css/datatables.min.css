@@ -458,7 +458,7 @@ table.dataTable>tbody>tr.child ul li {
     padding: 0.5em 0
 }
 */
-table.dataTable>tbody>tr.child ul li:last-child:before{
+table.dataTable>tbody>tr.child ul li:not(:first-child):before{
         content: "";
         height: 1px;
         display: block;
@@ -551,3 +551,4 @@ div.dtr-modal div.dtr-modal-background {
         width: 95%
     }
 }
+/***********************************/

@@ -129,7 +129,7 @@
             
             <!--=======================Leave record Tab panes======================= -->
             <div class="tab-pane fade" id="leave-record">
-               <table class="table">
+               <table id="summary-table" class="table dataTable">
                     <thead>
                        <div class="row">
                            <h5 class="col-xs-6">Summary</h5>
@@ -138,55 +138,77 @@
                            </div>
                        </div>
                         <tr>
-                            <th>Total in year</th>
-                            <th>Hrs Entitled to</th>
-                            <th>Hrs Used</th>
-                            <th>Balance</th>
+                            <th class="sorting_asc" tabindex="0" aria-controls="annual-table" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Total in year: activate to sort column descending">Total in year</th>
+                            <th class="sorting" tabindex="0" aria-controls="annual-table" rowspan="1" colspan="1" aria-label="Hrs Entitled to: activate to sort column ascending">Hrs Entitled to</th>
+                            <th class="sorting" tabindex="0" aria-controls="annual-table" rowspan="1" colspan="1" aria-label="Hrs Used: activate to sort column ascending">Hrs Used</th>
+                            <th class="sorting" tabindex="0" aria-controls="annual-table" rowspan="1" colspan="1" aria-label="Balance: activate to sort column ascending">Balance</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Anna</td>
-                            <td>Pitt</td>
+                        <tr class="gradeA even" role="row">
+                            <td class="sorting_1" tabindex="0">122</td>
+                            <td>11</td>
                             <td>35</td>
-                            <td>New York</td>
+                            <td>12</td>
                         </tr>
                     </tbody>
                 </table>
                 
-                <table class="table">
-                    <thead>
-                        <div class="row"><h5 class="col-xs-12">Annual leave</h5></div>
-                        <tr>
-<!--                            <th>#</th>-->
-                            <th>From</th>
-                            <th>To</th>
-                            <th>Leave Type</th>
-                            <th>Remark</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                <table id="annual-table" class="table dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
+                    <thead>                    
+<!--                        <h5 class="annual-title">Annual leave</h5>-->
+                        <tr role="row">
+                            <th class="sorting_asc" tabindex="0" aria-controls="annual-table" rowspan="1" colspan="1" aria-sort="ascending" aria-label="From: activate to sort column descending">From</th>
+                            <th class="sorting" tabindex="0" aria-controls="annual-table" rowspan="1" colspan="1" aria-label="To: activate to sort column ascending">To</th>
+                            <th class="sorting" tabindex="0" aria-controls="annual-table" rowspan="1" colspan="1" aria-label="Leave Type: activate to sort column ascending">Leave Type</th>
+                            <th class="sorting" tabindex="0" aria-controls="annual-table" rowspan="1" colspan="1" aria-label="Remark: activate to sort column ascending">Remark</th>
+                            <th class="sorting" tabindex="0" aria-controls="annual-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th>
+                            <th class="sorting" tabindex="0" aria-controls="annual-table" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-<!--                            <th scope="row">1</th>-->
-                            <td>20/12/2016</td>
+                        <tr class="gradeA even" role="row">
+                            <td class="sorting_1" tabindex="0">20/12/2016</td>
                             <td>21/12/2016</td>
                             <td>Wedding leave</td>
                             <td>Sick</td>
                             <td><span class="glyphicon glyphicon-open"></span></td>
                             <td><span class="glyphicon glyphicon-ok"></span></td>
                         </tr>
-                        <tr>
-                            <td>20/12/2016</td>
+                        <tr role="row" class="odd">
+                            <td class="sorting_1">20/12/2016</td>
                             <td>21/12/2016</td>
                             <td>Wedding leave</td>
                             <td>Remark</td>
                             <td><span class="glyphicon glyphicon-saved"></span></td>
                             <td><span class="glyphicon glyphicon-remove"></span></td>
                         </tr>
-                        <tr>
-                            <td>20/12/2016</td>
+                        <tr role="row" class="even">
+                            <td class="sorting_1">20/12/2016</td>
+                            <td>21/12/2016</td>
+                            <td>Wedding leave</td>
+                            <td>Remark</td>
+                            <td><span class="glyphicon glyphicon-repeat"></span></td>
+                            <td><span class="glyphicon glyphicon-remove"></span></td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td class="sorting_1">20/12/2016</td>
+                            <td>21/12/2016</td>
+                            <td>Wedding leave</td>
+                            <td>Remark</td>
+                            <td><span class="glyphicon glyphicon-repeat"></span></td>
+                            <td><span class="glyphicon glyphicon-remove"></span></td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td class="sorting_1">20/12/2016</td>
+                            <td>21/12/2016</td>
+                            <td>Wedding leave</td>
+                            <td>Remark</td>
+                            <td><span class="glyphicon glyphicon-repeat"></span></td>
+                            <td><span class="glyphicon glyphicon-remove"></span></td>
+                        </tr>
+                        <tr role="row" class="even">
+                            <td class="sorting_1">20/12/2016</td>
                             <td>21/12/2016</td>
                             <td>Wedding leave</td>
                             <td>Remark</td>
@@ -246,14 +268,11 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-6">
-                                        <input type="date" class="form-control col-sm-6" placeholder="Form date" required>
-                                   </div>
-                                    <div class="col-sm-6">
-                                        <input type="date" class="form-control" placeholder="To date" required>
+                                <div class="input-group input-daterange">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-addon">to</div>
+                                        <input type="text" class="form-control">
                                     </div>
-                                </div>
                                 <div class="form-group row">
                                     <div class="col-sm-12">
                                         <input type="number" class="form-control" placeholder="Total Hours" required>
@@ -347,31 +366,5 @@
             <!--=======================EndRequest leave Tab panes======================= -->
         </div>
     </div>
-    <script>
-        $('ul.my-page-nav li').on ('click', function() {
-        //  $('ul.side_nav li a').removeClass('current');
-        //  $(this).addClass('current');
-          var aId = $(this).attr('id');
-       // Tìm tất cả thẻ a có giá trị là data-toggle
-          var dataToggle = $(this).find('a').attr('data-toggle');
-       // dataToggle != 'modal' Xác định popup
-          if(aId == 'id_leave_record' && dataToggle != 'modal') {
-            $("#my-page").addClass('container');
-            $(".my-page-nav").removeClass('col-sm-6 col-md-4');
-            $(".my-page-nav").addClass('col-sm-4 col-md-2');
-            $(".my-page-content").removeClass('col-sm-6 col-md-8');
-            $(".my-page-content").addClass('col-sm-8 col-md-10');
-            $(".workspace").parent().hide();
-          }
-          else if(dataToggle != 'modal') {
-            $("#my-page").removeClass('container');
-            $(".my-page-nav").removeClass('col-xs-12 col-sm-4 col-md-2');
-            $(".my-page-nav").addClass('col-xs-12 col-sm-6 col-md-4');
-            $(".my-page-content").removeClass('col-sm-8 col-md-10');
-            $(".my-page-content").addClass('col-sm-6 col-md-8');
-            $(".workspace").parent().show();
-          }
-        });
-    </script>
 </div>
 <!-- ======================= End My page Tab ======================= -->

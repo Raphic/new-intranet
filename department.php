@@ -23,6 +23,7 @@
                <!-- Top menu -->
                 <div class="topmenu container">
                     <ul class="nav nav-pills row">
+                        <a class="logo-back pc" href="index.php"><img src="images/whitelogo.png"></a>
                         <div class="profile">
                             <div class="btn-group navbar-right">
                                 <button type="button" class="btn">Profile</button>
@@ -978,7 +979,6 @@ in HO</a>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
                             </div>
                         </div>

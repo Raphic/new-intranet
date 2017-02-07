@@ -19,6 +19,13 @@
 <body>
     <?php include("include/leftmenu.php"); ?>
     <div id="page-content-wrapper">
+        <!-- Top menu -->
+        <div class="topmenu container pc">
+            <ul class="nav nav-pills row">
+                <a class="logo-back" href="index.php"><img src="images/whitelogo.png"></a>
+            </ul>
+        </div>
+        <!-- End Top menu -->
         <div id="corporate" class="container tab-pane documentoutside">
            <center>
                 <h3>Document Control System</h3>

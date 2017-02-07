@@ -25,7 +25,7 @@
                     <!-- ======================= Corporate Content ======================= -->
                     <div class="news-events tab-content index-left in active">
                         <?php include("newevent-tab.php"); ?>
-                        <?php include("vacancies-tab.php"); ?>
+                        <?php include("vacancies-tab.php"); ?>    
                     </div>
                     <!-- ======================= End Corporate Content ======================= --> 
                 </div>
@@ -38,10 +38,11 @@
                 <!-- ======================= End Employees Tab ======================= -->
                 
                 <!-- ======================= My page Tab ======================= -->
-                <div id="my-page" class="tab-pane fade nopadding index-left clearfix">
+                <div id="my-page" class="tab-pane fade nopadding index-left">
                      <?php include("my-page-tab.php"); ?>
                 </div>
                 <!-- ======================= End My page Tab ======================= -->
+                
             </div>
         </div>
     </div>

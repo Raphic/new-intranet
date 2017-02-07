@@ -21,7 +21,13 @@
 <body>
     <?php include("include/leftmenu.php"); ?>
     <div id="page-content-wrapper">
-        
+        <!-- Top menu -->
+        <div class="topmenu container pc">
+            <ul class="nav nav-pills row">
+                <a class="logo-back" href="index.php"><img src="images/whitelogo.png"></a>
+            </ul>
+        </div>
+        <!-- End Top menu -->
         <div id="corporate" class="container-fluid tab-pane">
             <div id="corporate-chart" class="tab-pane">
                 <div class="row chartoutside">
