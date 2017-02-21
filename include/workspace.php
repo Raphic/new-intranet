@@ -110,6 +110,12 @@
                 <p>Laptop borrow/return</p>
             </div>
         </li>
+        <li class="circle col-xs-4 col-sm-4 col-md-3">
+           <div class="circle-box">
+                <a title="Trade Union" href="https://drive.google.com/drive/folders/0B-FNGSdCyRCiOWRjN0NXYkdBNG8?usp=sharing" target="_blank" class="fa icon-custom fa-community"></a>
+                <p>Trade Union</p>
+            </div>
+        </li>
     </ul>
     <!--======================= Support Line======================= -->
     <div class="modal fade" id="support-line" tabindex="-1" role="dialog" aria-labelledby="SupportLineLabel" aria-hidden="true">

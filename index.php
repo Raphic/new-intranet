@@ -18,6 +18,7 @@
 </head>
    
 <body>
+        <div class="safari-ios"><img src="images/background/bg.jpg"></div>
         <?php include("include/leftmenu.php"); ?>
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -27,7 +28,7 @@
                <!-- Top menu -->
                 <div class="topmenu container">
                     <ul class="nav nav-pills">
-<!--                        <li><a title="Home" href="index.php"><i class="fa fa-home" aria-hidden="true"></i></a></li>-->
+                        <a  class="back-home" title="Home" href="index.php"><img src="images/back-home.png"></a>
                         <li class="parentHideRight"><a data-toggle="tab" href="#corporate">Corporate</a></li>
                         <li class="active"><a data-toggle="tab" href="#news-events">News and Events</a></li>
                         <li><a data-toggle="tab" href="#employees">Employees</a></li>
@@ -74,12 +75,14 @@
     (function ($) {
         $(window).on("load", function () {
             $(".event-tab-content").mCustomScrollbar({
-                setHeight: 390
-                , theme: "light-2"
+                theme: "minimal"
             });
             $(".employ-tab-content").mCustomScrollbar({
                 setHeight: 145
                 , theme: "light"
+            });
+            $(".workspace").mCustomScrollbar({
+                theme: "minimal-dark"
             });
         });
         //////////////////////////////Top menu////////////////////////////
@@ -126,6 +129,34 @@
                 ,info:false
             });
             
+            // Principle animation
+             $(".values").mouseover(function(){ 
+                 $(".values-text").addClass('svg-values-hover');
+                 $(".values-text svg path").css('stroke', 'rgba(236,66,62,1)');
+             });
+            $(".values").mouseout(function(){ 
+                $(".values-text").removeClass('svg-values-hover'); 
+                $(".values-text svg path").css('stroke', '#fff');
+            });
+            
+             $(".vision").mouseover(function(){ 
+                 $(".vision-text").addClass('svg-vision-hover');
+                 $(".vision-text svg path").css('stroke', 'rgba(247,143,33,1)');
+             });
+            $(".vision").mouseout(function(){ 
+                $(".vision-text").removeClass('svg-vision-hover'); 
+                $(".vision-text svg path").css('stroke', '#fff');
+            });
+            
+            $(".mission").mouseover(function(){ 
+                 $(".mission-text").addClass('svg-mission-hover');
+                 $(".mission-text svg line").css('stroke', 'rgba(170,208,58,1)');
+             });
+            $(".mission").mouseout(function(){ 
+                $(".mission-text").removeClass('svg-mission-hover'); 
+                $(".mission-text svg line").css('stroke', '#fff');
+            });
+            
             $('ul.my-page-nav li').on ('click', function() {
             //  $('ul.side_nav li a').removeClass('current');
             //  $(this).addClass('current');
@@ -135,18 +166,18 @@
            // dataToggle != 'modal' Xác định popup
               if(aId == 'id_leave_record' && dataToggle != 'modal') {
                 $("#my-page").addClass('container');
-                $(".my-page-nav").removeClass('col-sm-6 col-md-4');
-                $(".my-page-nav").addClass('col-sm-3');
-                $(".my-page-content").removeClass('col-sm-6 col-md-8');
-                $(".my-page-content").addClass('col-sm-9');
+                $(".my-page-nav").removeClass('col-xs-12 col-sm-6 col-md-4');
+                $(".my-page-nav").addClass('col-xs-12 col-sm-3 col-md-2');
+                $(".my-page-content").removeClass('col-xs-12 col-sm-6 col-md-8');
+                $(".my-page-content").addClass('col-xs-12 col-sm-9 col-md-10');
                 $(".workspace").parent().hide();
               }
               else if(dataToggle != 'modal') {
                 $("#my-page").removeClass('container');
-                $(".my-page-nav").removeClass('col-xs-12 col-sm-3');
+                $(".my-page-nav").removeClass('col-xs-12 col-sm-3 col-md-2');
                 $(".my-page-nav").addClass('col-xs-12 col-sm-6 col-md-4');
-                $(".my-page-content").removeClass('col-sm-9');
-                $(".my-page-content").addClass('col-sm-6 col-md-8');
+                $(".my-page-content").removeClass('col-xs-12 col-sm-9 col-md-10');
+                $(".my-page-content").addClass('col-xs-12 col-sm-6 col-md-8');
                 $(".workspace").parent().show();
               }
             });

@@ -17,6 +17,7 @@
 </head>
    
 <body>
+    <div class="safari-ios"><img src="images/background/bg.jpg"></div>
     <?php include("include/leftmenu.php"); ?>
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -25,7 +26,7 @@
             <div class="warp-content container">
                 <!-- Top menu -->
                 <div class="topmenu container">
-                    <a class="logo-back pc" href="index.php"><img src="images/whitelogo.png"></a>
+                    <a class="logo-back" href="index.php"><img src="images/back-home.png"></a>
                     <ul class="nav nav-pills row">
                         <div class="profile">
                             <div class="btn-group navbar-right">

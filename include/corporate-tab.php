@@ -34,8 +34,9 @@
                         <p>We are committed to build a professional and open working environment, where people have epual chance to grow.</p>
                         <p>We operate our business ethically, trans-parently and efficiently.</p>
                         <p>We struve continually ti grow,learn and improve.</p>
+                        <p>We give back  to our community.</p>
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75px" height="50px" viewBox="0 0 75 50" enable-background="new 0 0 75 50" xml:space="preserve">
-                            <path fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" d="M75,50L32.048 3.169 0 0 "></path>
+                            <path stroke-miterlimit="10" d="M75,50L32.048 3.169 0 0 "></path>
                         </svg>
                     </div>
 
@@ -51,9 +52,9 @@
                                 <path d="M87.584,1.25L264.709 0 352.666 153.23 213.584 172.125 z"></path>
                                 <text transform="matrix(0.5888 0.8083 -0.8083 0.5888 185.5059 54.1172)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="27.8707">VISION</text>
                             </g>
-                            <g class="misson">
+                            <g class="mission">
                                 <path d="M352.666,153.23L141.86 181.338 87.647 306.938 265.377 305.918 z"></path>
-                                <text transform="matrix(0.9856 -0.1692 0.1692 0.9856 152.8398 255.6035)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="30.5863">MISSON</text>
+                                <text transform="matrix(0.9856 -0.1692 0.1692 0.9856 152.8398 255.6035)" display="inline" fill="#FFFFFF" font-family="" Helvetica Neue ", Helvetica, Arial, sans-serif" font-size="30.5863">MISSION</text>
                             </g>
                         </svg>
                         <!--=================Effect Show=================-->
@@ -71,13 +72,13 @@
                             <div class="col-xs-12 vision-text">
                                 <p>To become best-in-class in the education and trainning industry. We do this through our commitment to deliver life-changing learning experiences that empower our students for life.</p>
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="105px" height="50px" viewBox="0 0 105 50" enable-background="new 0 0 105 50" xml:space="preserve">
-                                    <path fill="none" stroke="#fff" stroke-width="2" d="M0,50L60.131 5.042 105 0 "></path>
+                                    <path d="M0,50L60.131 5.042 105 0 "></path>
                                 </svg>
                             </div>
                             <div class="col-xs-12 mission-text">
                                 <p>We are committed to continuously improve our operations, to build more schools and to provide 21st century learning standards for our students.</p>
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="2px" viewBox="0 0 100 2" enable-background="new 0 0 100 2" xml:space="preserve">
-                                <line fill="#FFFFFF" stroke="#fff" stroke-width="2" stroke-miterlimit="10" x1="0" y1="1" x2="100" y2="1"/>
+                                <line stroke-miterlimit="10" x1="0" y1="1" x2="100" y2="1"/>
                                 </svg>
                             </div>
                         </div>
@@ -92,13 +93,14 @@
                     <p>We are committed to build a professional and open working environment, where people have epual chance to grow.</p>
                     <p>We operate our business ethically, trans-parently and efficiently.</p>
                     <p>We struve continually ti grow,learn and improve.</p>
+                    <p>We give back  to our community.</p>
                 </div>
 
                 <div class="col-xs-12 col-xm-12 vision">
                     <h3 class="row">VISIONS</h3>
                     <p>To become best-in-class in the education and trainning industry. We do this through our commitment to deliver life-changing learning experiences that empower our students for life.</p>
                 </div>
-                <div class="col-xs-12 col-xm-12 misson">
+                <div class="col-xs-12 col-xm-12 mission">
                     <h3 class="row">MISSION</h3>
                     <p>We are committed to continuously improve our operations, to build more schools and to provide 21st century learning standards for our students.</p>
                     <br>

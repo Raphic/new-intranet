@@ -17,12 +17,13 @@
 </head>
 
 <body>
+    <div class="safari-ios"><img src="images/background/bg.jpg"></div>
     <?php include("include/leftmenu.php"); ?>
     <div id="page-content-wrapper">
         <!-- Top menu -->
         <div class="topmenu container pc">
             <ul class="nav nav-pills row">
-                <a class="logo-back" href="index.php"><img src="images/whitelogo.png"></a>
+                <a class="logo-back" href="index.php"><img src="images/back-home.png"></a>
             </ul>
         </div>
         <!-- End Top menu -->
@@ -50,6 +51,7 @@
                         <li><a href="#tab14" data-toggle="tab" aria-expanded="true">Sales</a></li>
                         <li><a href="#tab15" data-toggle="tab" aria-expanded="true">Teacher Training Centre</a></li>
                         <li><a href="#tab16" data-toggle="tab" aria-expanded="true">The Overseas Study Centre</a></li>
+                        <div class="line ease"></div>
                     </ul>
                     <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 nopadding system-content">
                         <div class="tab-content col-xs-12 col-sm-12 col-md-12">
@@ -1226,6 +1228,9 @@
                 </div>
             </div>
         </div>
+       <!---------------  Footer --------------->
+        <?php include("include/footer.php"); ?>
+        <!--------------- /Footer --------------->
     </div>
 </body>
 

@@ -19,12 +19,13 @@
 </head>
 
 <body>
+    <div class="safari-ios"><img src="images/background/bg.jpg"></div>
     <?php include("include/leftmenu.php"); ?>
     <div id="page-content-wrapper">
         <!-- Top menu -->
         <div class="topmenu container pc">
             <ul class="nav nav-pills row">
-                <a class="logo-back" href="index.php"><img src="images/whitelogo.png"></a>
+                <a class="logo-back" href="index.php"><img src="images/back-home.png"></a>
             </ul>
         </div>
         <!-- End Top menu -->

@@ -48,11 +48,11 @@
     </div>
     <script>
         $(document).ready(function () {
-          var box_event = $("#news-events-ne .event-content"),
-                btn_load_event = $("#news-events-ne #loadMore"),
+          var box_event = $(".event-content"),
+                btn_load_event = $("#loadMore"),
               
-                box_vacan = $("#news-events-vacancies .event-content"),
-                btn_load_vacan = $("#news-events-vacancies #loadMore"),
+                box_vacan = $(".vacancies-content"),
+                btn_load_vacan = $("#loadVacancies"),
               
                 box_wel_board = $(".wel-board .empoly-content"),
                 btn_load_wel_board = $(".wel-board #loadMore"),
@@ -62,51 +62,63 @@
                 
                 box_happ_birth = $(".happy-birth .empoly-content"),
                 btn_load_happ_birth = $(".happy-birth #loadMore");
-
+                ////////////////////////////////////////////////////////////////////
                 box_event.slice(0, 4).show();
+                $('.event-show-items').html($(".event-content:hidden").length);
                 btn_load_event.on('click', function (loadmore) {
                     loadmore.preventDefault();
-                    $("#news-events-ne .event-content:hidden").slice(0, 4).slideDown();
-                    if ($("#news-events-ne .event-content:hidden").length == 0) {
+                    $(".event-content:hidden").slice(0, 4).slideDown();
+                    if ($(".event-content:hidden").length == 0) {
                         btn_load_event.fadeOut('slow');
                     }
+                $('.event-show-items').html($(".event-content:hidden").length);
                 });
-
+                ////////////////////////////////////////////////////////////////////
                 box_vacan.slice(0, 4).show();
+                $('.vacancies-show-items').html($(".vacancies-content:hidden").length)
+
                 btn_load_vacan.on('click', function (loadmore) {
                     loadmore.preventDefault();
-                    $("#news-events-vacancies .event-content:hidden").slice(0, 4).slideDown();
-                    if ($("#news-events-vacancies .event-content:hidden").length == 0) {
+                    $(".vacancies-content:hidden").slice(0, 4).slideDown();
+                    if ($(".vacancies-content:hidden").length == 0) {
                         btn_load_vacan.fadeOut('slow');
                     }
+                $('.vacancies-show-items').html($(".vacancies-content:hidden").length);
                 });
-            
+                ////////////////////////////////////////////////////////////////////
                 box_wel_board.slice(0, 2).show();
+                $('.wel-board-show-items').html($(".wel-board .empoly-content:hidden").length);
                 btn_load_wel_board.on('click', function (loadmore) {
                     loadmore.preventDefault();
                     $(".wel-board .empoly-content:hidden").slice(0, 4).slideDown();
                     if ($(".wel-board .empoly-content:hidden").length == 0) {
                         btn_load_wel_board.fadeOut('slow');
                     }
+                $('.wel-board-show-items').html($(".wel-board .empoly-content:hidden").length);
                 });
-            
+                ////////////////////////////////////////////////////////////////////
                 box_staff_move.slice(0, 2).show();
+                $('.staff-move-show-items').html($(".staff-move .empoly-content:hidden").length);
                 btn_load_staff_move.on('click', function (loadmore) {
                     loadmore.preventDefault();
                     $(".staff-move .empoly-content:hidden").slice(0, 4).slideDown();
                     if ($(".staff-move .empoly-content:hidden").length == 0) {
                         btn_load_staff_move.fadeOut('slow');
                     }
+                $('.staff-move-show-items').html($(".staff-move .empoly-content:hidden").length);
                 });
-            
+                ////////////////////////////////////////////////////////////////////
                 box_happ_birth.slice(0, 2).show();
+                $('.happ-birth-show-items').html($(".happy-birth .empoly-content:hidden").length);
                 btn_load_happ_birth.on('click', function (loadmore) {
                     loadmore.preventDefault();
                     $(".happy-birth .empoly-content:hidden").slice(0, 4).slideDown();
                     if ($(".happy-birth .empoly-content:hidden").length == 0) {
                         btn_load_happ_birth.fadeOut('slow');
                     }
+                $('.happ-birth-show-items').html($(".happy-birth .empoly-content:hidden").length);
                 });
+                ////////////////////////////////////////////////////////////////////
 //                Menu  Select
                 $(".dropdown-menu li a").click(function(){
                     var selText = $(this).text();

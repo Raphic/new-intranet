@@ -16,6 +16,7 @@
         <li><a href="#tab14" data-toggle="tab">Sales</a></li>
         <li><a href="#tab15" data-toggle="tab">Teacher Training Centre</a></li>
         <li><a href="#tab16" data-toggle="tab">The Overseas Study Centre</a></li>
+        <div class="line ease"></div>
     </ul>
     <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 nopadding system-content">
             <div class="tab-content col-xs-12 col-sm-12 col-md-12">

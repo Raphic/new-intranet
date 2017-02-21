@@ -5,6 +5,35 @@ svg {
 }
 */
 /*****************Hover Coporate Principle********************/
+.principle-svg,
+.principle-svg g,
+.principle-svg g:hover,
+.principle-svg path,
+.principle-svg path:hover,
+.principle-svg text,
+.principle-svg text:hover,
+.values-text,
+.vision-text,
+.mission-text,
+.values-text svg path,
+.vision-text svg path,
+.mission-text svg line,
+.svg-values-hover,
+.svg-vision-hover,
+.svg-mission-hover,
+.values,
+.vision,
+.mission{
+    -webkit-transition: all .27s ease-in-out;
+    -moz-transition: all .27s ease-in-out;
+    -o-transition: all .27s ease-in-out;
+     transition: all .27s ease-in-out;
+}
+.values,
+.vision,
+.mission{
+    cursor: pointer;
+}
 .principle{
     position: relative;
 }
@@ -26,6 +55,13 @@ svg {
     top: 10px;
     z-index: 1;
 }
+.values-text svg path,
+.vision-text svg path,
+.mission-text svg line{
+     stroke: #fff; 
+     fill: none;
+     stroke-width: 2;
+}
 .vision-text{
     display: block;
     position: relative;
@@ -37,20 +73,8 @@ svg {
     margin-top: 180px;
 }
 .mission-text svg{
-    top: 40%;
+    top: 15%;
     left: -100px;
-}
-
-.principle-svg,
-.principle-svg g,
-.principle-svg g:hover,
-.principle-svg path,
-.principle-svg path:hover,
-.principle-svg text,
-.principle-svg text:hover{
-    -webkit-transition: all .27s ease-in-out;
-     transition: all .27s ease-in-out;
-    cursor: pointer;
 }
 .principle-svg g:hover text{
     stroke: #fff;
@@ -62,10 +86,9 @@ svg {
 .vision path{
     fill:#F78F21;
 }
-.misson path{
+.mission path{
     fill:#AAD03A;
 }
-
 .values:hover path{
     fill: rgba(236,66,62,0.8);
     stroke: rgba(236,66,62,1);
@@ -76,10 +99,19 @@ svg {
     stroke: rgba(246,142,32,1);
     stroke-width: 2px;
 }
-.misson:hover path{
+.mission:hover path{
     fill: rgba(170,207,57,0.8);
     stroke: rgba(170,207,57,1);
     stroke-width: 2px;
+}
+.svg-values-hover{
+    text-shadow : 0 0 24px #C00, 0 0 4px #C00, 1px 1px 2px #333;
+}
+.svg-vision-hover{
+    text-shadow : 0 0 24px #F78F21, 0 0 4px #F78F21, 1px 1px 2px #333;
+}
+.svg-mission-hover{
+    text-shadow : 0 0 24px #AAD03A, 0 0 4px #AAD03A, 1px 1px 2px #333;
 }
 /***************** Classical ********************/
 .drawings {

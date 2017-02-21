@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <div class="safari-ios"><img src="images/background/bg.jpg"></div>
     <?php include("include/leftmenu.php"); ?>
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -23,7 +24,7 @@
                <!-- Top menu -->
                 <div class="topmenu container">
                     <ul class="nav nav-pills row">
-                        <a class="logo-back pc" href="index.php"><img src="images/whitelogo.png"></a>
+                        <a class="logo-back" href="index.php"><img src="images/back-home.png"></a>
                         <div class="profile">
                             <div class="btn-group navbar-right">
                                 <button type="button" class="btn">Profile</button>
@@ -44,8 +45,7 @@
                 <!-- End Top menu -->
                 <div class="directory row">
                     <h2>Directory</h2>
-                    <br>
-                    <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
                         <div class="directory-search">
                             <div class="input-group">
                                 <input type="search" class="form-control" placeholder="Type name, email, department, position">
@@ -61,10 +61,10 @@
                                <div class="panel-group" id="accordion">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            <h4 class="panel-title">
+                                            <h5 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#directory-collapse1" class="fa fa-plus" aria-hidden="true"></a>
                                                 <a href="#">HO-ILAV<span class="label pull-right">12</span></a>
-                                              </h4> 
+                                            </h5> 
                                         </div>
                                         <div id="directory-collapse1" class="panel-collapse collapse">
                                             <div class="panel-body"> 
@@ -700,7 +700,7 @@
                         <button type="button" class="btn btn-mirror send-email">Send email <span>( 0 )</span></button>
                     </div>
                     
-                    <div class="col-xs-12 col-sm-8 col-md-8">
+                    <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
                        <div class="directory-select row clearfix">
                             <div class="col-xs-6 col-sm-6 clearfix">
                                 <button type="button" class="btn btn-mirror">Select All</button>
@@ -717,7 +717,7 @@
                             </div>
                         </div>
                         <div class="directory-box row">
-                            <div class="col-lg-6">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="contact-box">
                                     <div class="col-sm-4">
                                         <div class="contact-img">
@@ -729,16 +729,16 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-8">
-                                        <a href="#"><h4><strong>Bùi Lê Thị Diệu Mai</strong></h4></a>
-                                        <p class="contact-position">English Language Training - TC-HCMC9<span>ILA Community Network Director</span></p>
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">Product Development Management - HO-ILAV<span>Training & Development Specialist</span></p>
                                         <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
                                         <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
-                                        <p class="contact-email"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
+                                        <p class="contact-email"><!--<i class="fa fa-envelope-o" aria-hidden="true"></i>--><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="contact-box">
                                     <div class="col-sm-4">
                                         <div class="contact-img">
@@ -750,16 +750,16 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-8">
-                                        <a href="#"><h4><strong>Bùi Lê Thị Diệu Mai</strong></h4></a>
-                                        <p class="contact-position">English Language Training - TC-HCMC9<span>ILA Community Network Director</span></p>
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
                                         <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
                                         <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
-                                        <p class="contact-email"><i class="fa fa-envelope-o" aria-hidden="true"></i>alexsmith01@ilavietnam.edu.vn</p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="contact-box">
                                     <div class="col-sm-4">
                                         <div class="contact-img">
@@ -771,16 +771,16 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-8">
-                                        <a href="#"><h4><strong>Bùi Lê Thị Diệu Mai</strong></h4></a>
-                                        <p class="contact-position">English Language Training - TC-HCMC9<span>ILA Community Network Director</span></p>
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
                                         <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
                                         <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
-                                        <p class="contact-email"><i class="fa fa-envelope-o" aria-hidden="true"></i>alexsmith01@ilavietnam.edu.vn</p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="contact-box">
                                     <div class="col-sm-4">
                                         <div class="contact-img">
@@ -792,16 +792,16 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-8">
-                                        <a href="#"><h4><strong>Bùi Lê Thị Diệu Mai</strong></h4></a>
-                                        <p class="contact-position">English Language Training - TC-HCMC9<span>ILA Community Network Director</span></p>
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
                                         <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
                                         <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
-                                        <p class="contact-email"><i class="fa fa-envelope-o" aria-hidden="true"></i>alexsmith01@ilavietnam.edu.vn</p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="contact-box">
                                     <div class="col-sm-4">
                                         <div class="contact-img">
@@ -813,16 +813,16 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-8">
-                                        <a href="#"><h4><strong>Bùi Lê Thị Diệu Mai</strong></h4></a>
-                                        <p class="contact-position">English Language Training - TC-HCMC9<span>ILA Community Network Director</span></p>
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
                                         <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
                                         <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
-                                        <p class="contact-email"><i class="fa fa-envelope-o" aria-hidden="true"></i>alexsmith01@ilavietnam.edu.vn</p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="contact-box">
                                     <div class="col-sm-4">
                                         <div class="contact-img">
@@ -834,16 +834,16 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-8">
-                                        <a href="#"><h4><strong>Bùi Lê Thị Diệu Mai</strong></h4></a>
-                                        <p class="contact-position">English Language Training - TC-HCMC9<span>ILA Community Network Director</span></p>
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
                                         <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
                                         <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
-                                        <p class="contact-email"><i class="fa fa-envelope-o" aria-hidden="true"></i>alexsmith01@ilavietnam.edu.vn</p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="contact-box">
                                     <div class="col-sm-4">
                                         <div class="contact-img">
@@ -855,11 +855,116 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-8">
-                                        <a href="#"><h4><strong>Bùi Lê Thị Diệu Mai</strong></h4></a>
-                                        <p class="contact-position">English Language Training - TC-HCMC9<span>ILA Community Network Director</span></p>
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
                                         <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
                                         <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
-                                        <p class="contact-email"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>alexsmith01@ilavietnam.edu.vn</a></p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="contact-box">
+                                    <div class="col-sm-4">
+                                        <div class="contact-img">
+                                            <img alt="image" class="img-circle img-responsive" src="images/a1.jpg">
+                                            <div class="contact-icon">
+                                                <a title="Add to Group" target="_bank" href="#" class=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                                <a title="View profile" href="#view-profile" data-toggle="modal"><i class="fa fa-info" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
+                                        <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
+                                        <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="contact-box">
+                                    <div class="col-sm-4">
+                                        <div class="contact-img">
+                                            <img alt="image" class="img-circle img-responsive" src="images/a1.jpg">
+                                            <div class="contact-icon">
+                                                <a title="Add to Group" target="_bank" href="#" class=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                                <a title="View profile" href="#view-profile" data-toggle="modal"><i class="fa fa-info" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
+                                        <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
+                                        <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="contact-box">
+                                    <div class="col-sm-4">
+                                        <div class="contact-img">
+                                            <img alt="image" class="img-circle img-responsive" src="images/a1.jpg">
+                                            <div class="contact-icon">
+                                                <a title="Add to Group" target="_bank" href="#" class=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                                <a title="View profile" href="#view-profile" data-toggle="modal"><i class="fa fa-info" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
+                                        <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
+                                        <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="contact-box">
+                                    <div class="col-sm-4">
+                                        <div class="contact-img">
+                                            <img alt="image" class="img-circle img-responsive" src="images/a1.jpg">
+                                            <div class="contact-icon">
+                                                <a title="Add to Group" target="_bank" href="#" class=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                                <a title="View profile" href="#view-profile" data-toggle="modal"><i class="fa fa-info" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
+                                        <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
+                                        <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="contact-box">
+                                    <div class="col-sm-4">
+                                        <div class="contact-img">
+                                            <img alt="image" class="img-circle img-responsive" src="images/a1.jpg">
+                                            <div class="contact-icon">
+                                                <a title="Add to Group" target="_bank" href="#" class=""><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                                <a title="View profile" href="#view-profile" data-toggle="modal"><i class="fa fa-info" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <a href="#"><h5><strong>Bùi Lê Thị Diệu Mai</strong></h5></a>
+                                        <p class="contact-position">English Language Training - TC-HCMC9<span>Training & Development Specialist</span></p>
+                                        <p class="contact-phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
+                                        <p class="contact-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
+                                        <p class="contact-email"><a href="mailto:#">alexsmith01@ilavietnam.edu.vn</a></p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -877,66 +982,13 @@
                     </div>
                 </div>
                 <!--======================= Modal info member======================= -->
-                <div class="modal fade" id="view-profile" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content animated flipInY">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title">Staff Info</h4>
-                                <!--                                <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>--></div>
-                            <div class="modal-body">
-                                <div class="contact-box">
-                                    <div class="col-sm-4">
-                                        <div class="contact-img"> <img alt="image" class="img-circle img-responsive" src="images/a1.jpg"> </div>
-                                    </div>
-                                    <div class="col-sm-8"> <a href="#"><h4><strong>Bùi Lê Thị Diệu Mai</strong></h4></a>
-                                        <p class="contact-phone" title="Phone"><i class="fa fa-phone" aria-hidden="true"></i>08-62586220 - Ext. -</p>
-                                        <p class="contact-mobile" title="Mobile"><i class="fa fa-mobile" aria-hidden="true"></i>01264914931</p>
-                                        <p class="contact-email" title="Email"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>alexsmith01@ilavietnam.edu.vn</a></p>
-                                        <p class="contact-join-date" title="Join Date"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>20-07-2006</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div>
-                                    <h4>Job Description</h4>
-                                    <table class="table table-striped">
-                                        <tbody>
-                                            <tr>
-                                                <th>Job title</th>
-                                                <td>Chairman</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Department</th>
-                                                <td>Board of Directors</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Report to</th>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th>Job purpose</th>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <th>Reponsibilities</th>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php include("include/profile.php"); ?>
                 <!--======================= End Modal info member======================= -->
                 <!-- Page Content Main-->
-                <!---------------  Footer --------------->
-                <?php include("include/footer.php"); ?>
-               <!--------------- /Footer --------------->
             </div>
+            <!---------------  Footer --------------->
+            <?php include("include/footer.php"); ?>
+            <!--------------- /Footer --------------->
             <!-- /#page-content-wrapper -->
         </div>
         <script src="js/jquery.mCustomScrollbar.js"></script>
@@ -944,15 +996,11 @@
             (function ($) {
                 $(window).on("load", function () {
                     $(".directory-box").mCustomScrollbar({
-                        setHeight: 620
-                        , autoHideScrollbar: "boolean"
-                        , scrollbarPosition: "inside"
-                        , theme: "light"
+                        theme: "minimal-dark"
                     });
                     $(".panel-box").mCustomScrollbar({
-                        setHeight: 550
-                        , scrollbarPosition: "inside"
-                        , theme: "light"
+//                        , autoHideScrollbar: "boolean"
+                        theme: "minimal"
                     });
                 });
             })(jQuery);

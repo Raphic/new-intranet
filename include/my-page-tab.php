@@ -15,6 +15,7 @@
             <li id="id_leave_record" class="hideRight"><a href="#leave-record" data-toggle="tab">Leave record</a></li>
             <li><a href="#payslip-modal" data-toggle="modal" data-target="#payslip-modal">Payslip</a></li>
             <li><a href="#changebg-modal" data-toggle="modal" data-target="#changebg-modal">Change background</a></li>
+            <div class="line ease"></div>
         </ul>
         <ul class="nav nav-tabs my-page-nav mb" role="tablist">
             <li class="dropdown active"> 
@@ -29,7 +30,7 @@
             </li>
         </ul>
         <!-- =======================End Nav tabs lv2======================= -->
-
+        
         <!-- =======================Tab panes======================= -->
         <div class="my-page-content tab-content col-xs-12 col-sm-6 col-md-8">
            <!--Profile details Tab panes -->
@@ -172,48 +173,56 @@
                             <td>21/12/2016</td>
                             <td>Wedding leave</td>
                             <td>Sick</td>
-                            <td><span class="glyphicon glyphicon-open"></span></td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
+                            <td>Pending</td>
+                            <td>Approve</td>
                         </tr>
                         <tr role="row" class="odd">
                             <td class="sorting_1">20/12/2016</td>
                             <td>21/12/2016</td>
                             <td>Wedding leave</td>
                             <td>Remark</td>
+                            <td>Saved</td>
+                            <td>Remove</td>
+<!--
                             <td><span class="glyphicon glyphicon-saved"></span></td>
                             <td><span class="glyphicon glyphicon-remove"></span></td>
+-->
                         </tr>
                         <tr role="row" class="even">
                             <td class="sorting_1">20/12/2016</td>
                             <td>21/12/2016</td>
                             <td>Wedding leave</td>
                             <td>Remark</td>
+                            <td>Repeat</td>
+                            <td>Remove</td>
+<!--
                             <td><span class="glyphicon glyphicon-repeat"></span></td>
                             <td><span class="glyphicon glyphicon-remove"></span></td>
+-->
                         </tr>
                         <tr role="row" class="even">
                             <td class="sorting_1">20/12/2016</td>
                             <td>21/12/2016</td>
                             <td>Wedding leave</td>
                             <td>Remark</td>
-                            <td><span class="glyphicon glyphicon-repeat"></span></td>
-                            <td><span class="glyphicon glyphicon-remove"></span></td>
+                            <td>Repeat</td>
+                            <td>Remove</td>
                         </tr>
                         <tr role="row" class="even">
                             <td class="sorting_1">20/12/2016</td>
                             <td>21/12/2016</td>
                             <td>Wedding leave</td>
                             <td>Remark</td>
-                            <td><span class="glyphicon glyphicon-repeat"></span></td>
-                            <td><span class="glyphicon glyphicon-remove"></span></td>
+                            <td>Saved</td>
+                            <td>Remove</td>
                         </tr>
                         <tr role="row" class="even">
                             <td class="sorting_1">20/12/2016</td>
                             <td>21/12/2016</td>
                             <td>Wedding leave</td>
                             <td>Remark</td>
-                            <td><span class="glyphicon glyphicon-repeat"></span></td>
-                            <td><span class="glyphicon glyphicon-remove"></span></td>
+                            <td>Pending</td>
+                            <td>Approve</td>
                         </tr>
                     </tbody>
                 </table>
